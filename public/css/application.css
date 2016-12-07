@@ -11,8 +11,27 @@ form div.input {
 input {
     border-radius:2px;
     border: solid 0px;
-    padding:1em;
+    padding: 1em;
 }
 .submit {
   width: 100%;
+}
+
+.flames_image {
+	padding: 2em 0;
+}
+
+@media only screen and (min-width: 40.063em) { 
+
+  .header {
+    padding-top: 1em;
+  }
+
+  form {
+    padding-top: 4em;
+  }
+
+  .flames_image {
+    padding: 10em 0;
+  }
 }

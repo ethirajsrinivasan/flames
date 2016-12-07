@@ -29,22 +29,9 @@
 </div>
 <div class="row">
   <div class="large-3 medium-3  medium-centered columns">
-    <br/>
-    <br/>
-<% case @result %>
-<% when 'F' %>
-  <img src="images/friend.jpg" alt="Friend" width="250" height="250">
-<% when 'L' %>
-  <img src="images/love.jpg" alt="Love" width="250" height="250">
-<% when 'A' %>
-  <img src="images/affection.jpg" alt="Affection" width="250" height="250">
-<% when 'M' %>
-  <img src="images/marriage.jpg" alt="Marriage" width="250" height="250">
-<% when 'E' %>
-  <img src="images/enemy.jpg" alt="Enemy" width="250" height="250">
-<% when 'S' %>
-  <img src="images/sister.jpg" alt="Sister" width="250" height="250">
-<% end %>
+    <div class="flames_image">
+      <%= get_image(@result) %>
+    </div>
 </div>
 </div>
 </body>

@@ -3,6 +3,28 @@ require 'rubygems'
 require 'sinatra'
 require './initialize'
 
+helpers do
+  def get_image(result)
+  return nil if result.nil?
+  name = case result
+    when 'F'
+      "friend"
+    when 'L'
+      "love"
+    when 'A'
+      "affection"
+    when 'M'
+      "marriage"
+    when 'E'
+      "enemy"
+    when 'S'
+      "sister"
+    end
+  "<img src='images/#{name}.jpg' alt='#{name}'>"
+  end
+end
+
+
 get '/' do
 
   unless params.empty? || params[:person1].empty? ||  params[:person2].empty?
