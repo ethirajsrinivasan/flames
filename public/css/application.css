@@ -21,7 +21,7 @@ input {
 	padding: 2em 0;
 }
 
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (max-width: 64em) {
 
   .header {
     padding-top: 1em;
